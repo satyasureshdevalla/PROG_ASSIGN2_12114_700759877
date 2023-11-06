@@ -19,5 +19,4 @@ public interface MovieRepository extends Neo4jRepository<Movie, String>{
 
     @Query("MATCH (movie:Movie)-[:ACTED_IN]-(person:Person) RETURN movie.ids AS ids, movie.title AS title, COLLECT(person.name) AS person")
     List<QueryResultObj> getMovieAndShowDetailsWithActors();
-
 }

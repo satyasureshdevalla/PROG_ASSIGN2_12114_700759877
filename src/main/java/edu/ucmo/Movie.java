@@ -90,6 +90,4 @@ public class Movie {
     public void setRevenue(String revenue) {
         this.revenue = revenue;
     }
-
-
 }
